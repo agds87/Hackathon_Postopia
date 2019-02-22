@@ -14,11 +14,24 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
 
 }
 
 /* ---- typography ---- */
+h1 {
+  font-size: 80px;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-bottom: 0;
+}
 
+#hero p {
+  font-weight: 500;
+  font-size: 23px;
+  color: #FFFFFF;
+  line-height: 41px;
+}
 
 /* ---- layout ---- */
 
@@ -50,6 +63,7 @@ body {
 nav img {
   height: 45px;
   width: 168px;
+  margin-left: 0.5rem;
 }
 
 nav {
@@ -57,43 +71,76 @@ nav {
   top: 0;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
+  padding: 15px 40px;
 
 }
 
 #hero {
   display: flex;
   justify-content: flex-end;
-  background-image: url('./assets/bike-main.jpg');
+  background-image: url('./assets/backgroundhero.gif');
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh - 85px);
   background-size: cover;
 }
 
 .hero-text {
   padding: 20px;
+  align-self: center;
+  margin-left: 50vw;
+  margin-right: 5vw;
+  width: 35vw;
+  margin-bottom: 5vh;
+}
+
+#hero .subscribe {
+  margin: auto;
+  display: block;
 }
 
 /* ---- main ---- */
+#pricing {
+  background-image: url("assets/backgroundSectionSelling.jpg");
+  background-size: cover;
+}
+
 
 .pricing-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 50px 0;
+  padding: 70px 0;
 
 }
 
 
 .pricing-left {
-  border: 1px solid black;
-  padding: 20px;
+  padding: 10px;
   margin-right: 50px;
 }
 
-.pricing-left ul {
-  list-style: none;
+
+#pricing h3 {
+  font-weight: 600;
+  font-size: 45px;
+  color: #FFFFFF;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+
+#pricing h4 {
+  font-size: 40px;
+  color: #F574D0;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+
+#pricing p,
+li {
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: 1.3px;
+  line-height: 35px;
 }
 
 
@@ -107,11 +154,17 @@ nav {
   margin-left: 20px;
 }
 
+
 .trust {
   padding: 50px 0;
-  display: flex;
-  justify-content: center;
 }
+
+
+.trust img {
+  margin-left: 5px;
+  height: 2.5rem;
+}
+
 
 form {
   display: flex;
@@ -120,33 +173,63 @@ form {
 
 form input {
   margin: 20px 0;
-  padding: 10px;
+  padding: 15px;
   width: 400px;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+form label {
+  font-size: 24px;
+  color: #FFFFFF;
 }
 
 form button {
   padding: 10px;
   width: 150px;
   height: 50px;
-  justify-self: flex-end;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .button-submit {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
+
+
+
+
+
 
 
 /* ---- footer ---- */
 
 /* ---- components ---- */
 
+#nav-button {
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #0B2DB1;
+  text-align: center;
+  background: #FFFFFF;
+  border: 2px solid #0B2DB1;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
 .nav-colored {
-  background-color: white;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, .45) 0 4px 14px -5px;
 }
 
 .nav-transparent {
-  background-color: transparent;
+  background-color: white;
 }
 
 button {
@@ -160,6 +243,10 @@ button {
   padding: 17px 48px;
   font-weight: 800;
   border: none;
+  cursor: pointer;
 }
+
+
+
 
 /* ---- css shame ---- */

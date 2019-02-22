@@ -16,7 +16,7 @@ function main() {
 var myNav = document.getElementById('mynav');
 
 window.onscroll = () => { 
-    if (window.scrollY >= 30 ) {
+    if (window.scrollY >= 50 ) {
       myNav.classList.add("nav-colored");
       myNav.classList.remove("nav-transparent");
     } 
