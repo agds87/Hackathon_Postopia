@@ -4,7 +4,10 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 *,
 *:before,
 *:after {
@@ -315,6 +318,7 @@ button {
   font-weight: 800;
   border: none;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .container-self {
