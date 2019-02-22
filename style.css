@@ -4,49 +4,52 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
   padding: 0;
-  
-}
 
+}
 
 /* ---- typography ---- */
 
 
 /* ---- layout ---- */
 
-#hero{
-  background-color: rgb(139, 233, 135);
-
-}
-#selling{
-  background-color: red;
-  
-}
-#pricing{
-  background-color: aqua;
-  
+.container {
+  width: 900px;
+  margin: 0 auto;
 }
 
-
-@media (min-width: 768px) {
+@media (max-width: 992px) {
   .container {
-    max-width: 728px;
-    margin: 0 auto;
+    width: 700px
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 500px
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 350px
   }
 }
 
 /* ---- header ---- */
 
-
-
 nav img {
-  height: 3rem;
+  height: 45px;
+  width: 168px;
 }
 
 nav {
@@ -54,19 +57,109 @@ nav {
   top: 0;
   display: flex;
   justify-content: space-between;
+  background-color: transparent;
 
 }
-#hero{
-  display:flex;
+
+#hero {
+  display: flex;
   justify-content: flex-end;
+  background-image: url('./assets/bike-main.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.hero-text {
+  padding: 20px;
+}
+
+/* ---- main ---- */
+
+.pricing-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0;
 
 }
-.hero-text{
-  padding:20px;
+
+
+.pricing-left {
+  border: 1px solid black;
+  padding: 20px;
+  margin-right: 50px;
 }
+
+.pricing-left ul {
+  list-style: none;
+}
+
+
+.memberships-link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.form {
+  margin-left: 20px;
+}
+
+.trust {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin: 20px 0;
+  padding: 10px;
+  width: 400px;
+}
+
+form button {
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  justify-self: flex-end;
+}
+
+.button-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 /* ---- footer ---- */
 
 /* ---- components ---- */
 
-/* ---- css shame ---- */
+.nav-colored {
+  background-color: white;
+}
 
+.nav-transparent {
+  background-color: transparent;
+}
+
+button {
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  background-image: linear-gradient(90deg, #DA12B7 9%, #FF1968 79%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+  padding: 17px 48px;
+  font-weight: 800;
+  border: none;
+}
+
+/* ---- css shame ---- */

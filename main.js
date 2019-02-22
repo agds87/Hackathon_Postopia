@@ -1,8 +1,6 @@
 'use strict';
 
 function main() {
-
-
   let subscribe = document.querySelectorAll('.subscribe');
 
   subscribe.forEach((e) => {
@@ -11,7 +9,23 @@ function main() {
     })
   })
 
+
+
 }
+
+var myNav = document.getElementById('mynav');
+
+window.onscroll = () => { 
+    if (window.scrollY >= 30 ) {
+      myNav.classList.add("nav-colored");
+      myNav.classList.remove("nav-transparent");
+    } 
+    else {
+      
+      myNav.classList.add("nav-transparent");
+      myNav.classList.remove("nav-colored");
+    }
+};
 
 
 window.addEventListener('load', main);
