@@ -205,7 +205,78 @@ form button {
 
 
 
+/* ---- Selling points ---- */
+
+#selling {
+  padding: 50px 0;
+  font-size: 52px;
+  color: #23249A;
+  background-color: white;
+  font-weight: 600;
+}
+
+#selling h2 {
+  text-align: center;
+  text-align: center;
+  margin-top: 0;
+  padding: 2rem 0;
+  font-weight: 600;
+  font-size: 52px;
+  color: #23249A;
+}
+
+.selling-all {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.selling-item {
+  width: 40%;
+  padding: 10px;
+}
+
+.selling-item img {
+  display: block;
+  margin: 0 auto;
+  height: 10rem;
+}
+
+.selling-item h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 28px;
+  color: #E214A7;
+}
+
+.selling-item p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #7A7E88;
+  letter-spacing: 0.97px;
+  line-height: 35px;
+}
+
+
 /* ---- footer ---- */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 75px;
+}
+
+footer img {
+  width: 2rem;
+  margin-right: 20px;
+}
+
+.copyright {
+  font-size: 24px;
+  align-self: center;
+}
 
 /* ---- components ---- */
 
@@ -246,6 +317,10 @@ button {
   cursor: pointer;
 }
 
+.container-self {
+  width: 1240px;
+  margin: 0 auto;
+}
 
 
 
