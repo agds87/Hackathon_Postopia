@@ -56,7 +56,14 @@ nav {
   justify-content: space-between;
 
 }
+#hero{
+  display:flex;
+  justify-content: flex-end;
 
+}
+.hero-text{
+  padding:20px;
+}
 /* ---- footer ---- */
 
 /* ---- components ---- */

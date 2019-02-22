@@ -1,20 +1,17 @@
 'use strict';
 
-function main () {
-  let subscribe = document.getElementsByClassName('subscribe');
+function main() {
 
-  function scroll(){
-    document.getElementById('pricing').scrollIntoView();
-  }
+
+  let subscribe = document.querySelectorAll('.subscribe');
 
   subscribe.forEach((e) => {
-    e.addEventListener('click', scroll); 
+    e.addEventListener('click', () => {
+      document.getElementById('pricing').scrollIntoView();
+    })
   })
-  
 
 }
-
-
 
 
 window.addEventListener('load', main);
