@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -10,6 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 
@@ -18,15 +20,19 @@ body {
 
 /* ---- layout ---- */
 
+#hero{
+  background-color: rgb(139, 233, 135);
 
-.container {
-  margin: 0 20px;
+}
+#selling{
+  background-color: red;
+  
+}
+#pricing{
+  background-color: aqua;
+  
 }
 
-.section {
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
 
 @media (min-width: 768px) {
   .container {
@@ -36,6 +42,20 @@ body {
 }
 
 /* ---- header ---- */
+
+
+
+nav img {
+  height: 3rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+
+}
 
 /* ---- footer ---- */
 
